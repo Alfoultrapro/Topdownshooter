@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Top-Down Shooter Touch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ui">
+<label>Nickname:</label>
+<input type="text" id="nickname" placeholder="Nome">
+<input type="file" id="avatarInput" accept="image/*">
+<button id="joinBtn">Entra</button>
+</div>
+
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+
+<div id="joystickContainer" style="position:absolute; left:20px; bottom:20px; width:120px; height:120px; border-radius:50%; background:rgba(255,255,255,0.2);">
+  <div id="joystickKnob" style="width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.5);position:absolute;left:35px;top:35px;"></div>
+</div>
+
+<div id="shootButton" style="position:absolute; right:20px; bottom:20px; width:80px; height:80px; border-radius:50%; background:rgba(255,0,0,0.5);"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
